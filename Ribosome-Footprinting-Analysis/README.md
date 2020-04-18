@@ -32,7 +32,7 @@ count_features_nt_range_v2 SAM.input
 
 
 
-**count_features_nt_range_v2.c**
+### count_features_nt_range_v2.c ###
 
 *Description*: Takes as input a SAM file with mapped reads, and a file containing a list of transcripts including a nucleotide range for each transcript, and the software counts the number of reads that fall within the nucleotide range of each transcript. Secondary mappings are excluded.
 
@@ -52,7 +52,7 @@ count_features_nt_range_v2 SAM.input
 
  
 
-**metagene_plot_5UTR_CDS_3UTR_v2.c**
+### metagene_plot_5UTR_CDS_3UTR_v2.c ###
 
 *Description:* Performs the counting to generate a combined metagene plot of reads in 5’UTR, ORF and 3’UTR of transcripts. Read counts were normalized for the length of each of these features to make them comparable (yielding a measurement of ‘read density’).
 
@@ -72,7 +72,7 @@ count_features_nt_range_v2 SAM.input
 
  
 
-**metagene_plot_interval_v6.c**
+### metagene_plot_interval_v6.c ###
 
 *Description:* Performs the counting to generate a 2-dimensional metagene plot of reads within an interval, with position in that interval normalized to 0-100% (e.g. all transcript 5’UTRs), resolved for footprint length (1nt-100nt). Secondary mappings are not counted to avoid biasing genes with many transcript isoforms or reads with low sequence complexity. Only one interval per transcript is allowed.
 
@@ -92,7 +92,7 @@ count_features_nt_range_v2 SAM.input
 
  
 
-**metagene_plot_onePoint_v7.c**
+### metagene_plot_onePoint_v7.c ###
 
 *Description:* Performs the counting to generate a 2-dimensional metagene plot of reads relative to fixed point (e.g. start codon), from 100nt upstream of the fixed point to 100nt downstream, resolved for footprint length (1nt-100nt). Secondary mappings are not counted to avoid biasing genes with many transcript isoforms or reads with low sequence complexity. Only one interval per transcript is allowed.
 
@@ -112,7 +112,7 @@ count_features_nt_range_v2 SAM.input
 
  
 
-**single_gene_plot_v2.c**
+### single_gene_plot_v2.c ###
 
 *Description:* Counts the number of reads as a function of position on a single transcript, resolved for footprint length (1nt-100nt). Secondary mappings are counted.
 
