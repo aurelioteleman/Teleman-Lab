@@ -1,0 +1,17 @@
+rename("wingdisc.tif");
+run("Split Channels");
+selectWindow("wingdisc.tif (green)");
+close();
+selectWindow("wingdisc.tif (blue)");
+setThreshold(20, 255);
+run("Convert to Mask");
+run("Divide...", "value=255");
+imageCalculator("Multiply create", "wingdisc.tif (red)","wingdisc.tif (blue)");
+run("Set Measurements...", "  integrated display redirect=None decimal=3");
+selectWindow("Result of wingdisc.tif (red)");
+run("Measure");
+selectWindow("wingdisc.tif (blue)");
+run("Measure");
+close();
+selectWindow("wingdisc.tif (red)");
+close();
