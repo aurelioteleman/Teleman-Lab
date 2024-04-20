@@ -4,6 +4,8 @@ This sofware was used in publications from the Teleman Lab involving 40S and 80S
 
 This 2021 update includes all the software used for publications from the Teleman lab in 2020, plus the ones from 2021.
 
+Typical install time: 5 minutes.
+
 
 
 ## Installing & Running
